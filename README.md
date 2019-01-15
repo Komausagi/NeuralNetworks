@@ -2,6 +2,7 @@
 Codes of myself, by myself, for myself.
 
 (......for our study meetings in my laboratory.)
+
 ##Required libraries
 Python 3.5.4
 
@@ -14,6 +15,7 @@ numpy 1.13.1
 matplotlib 2.0.2
 
 (As of January 16, 2019)
+
 ##Description
 
 I referenced network structures included in "Neural Network Console" .
