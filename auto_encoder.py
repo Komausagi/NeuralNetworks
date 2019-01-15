@@ -113,7 +113,7 @@ def main(use_gpu=0):
     plt.plot(axis_x, y1, label='validation')
     plt.title('Learning Curve', fontsize=20)
     plt.xlabel('epoch', fontsize=16)
-    plt.ylabel('Error rate')
+    plt.ylabel('Loss')
     plt.tick_params(labelsize=14)
     plt.grid(True)
     plt.legend(loc='upper right')
