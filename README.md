@@ -3,7 +3,7 @@ Codes of myself, by myself, for myself.
 
 (......for our study meetings in my laboratory.)
 
-##Required libraries
+## Required libraries
 Python 3.5.4
 
 chainer 5.0.0
@@ -16,12 +16,12 @@ matplotlib 2.0.2
 
 (As of January 16, 2019)
 
-##Description
+## Description
 
 I referenced network structures included in "Neural Network Console" .
 (Because it is used in our study meeting.)
 
-###auto_encoder
+### auto_encoder
 
 An autoencoder is a model that outputs data same as input data.
 
@@ -35,7 +35,7 @@ To train autoencoder, just run auto_encoder.py.
 Trained model is saved in "models" folder.
 You can visualize outputs through running auto_encoder_visualize.py.
 
-###residual_learning
+### residual_learning
 
 In this program, I used the network named "Residual network".
 In Residual network, there are "residual blocks", and this block has a "shortcut".
