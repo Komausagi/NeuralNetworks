@@ -2,6 +2,7 @@ from chainer import Link, Chain, ChainList
 import chainer
 import chainer.functions as F
 import chainer.links as L
+from chainer import serializers
 import math, random
 import pandas as pd
 import cv2
@@ -102,6 +103,7 @@ def main(use_gpu=0):
 
         loss_val_list.append(loss_val.data)
 
+    serializers.save_npz('./models/auto_encoder', model)
     print("Time to finish learning:" + str(time.clock() - start_time))
     # draw accuracy graph
     axis_x = np.arange(0, epoch, 1)
