@@ -114,8 +114,8 @@ def main(use_gpu=0):
         accuracy_train_list.append(1-(accuracy_train/batch_times))
 
         with chainer.using_config('train', False), chainer.no_backprop_mode():
-            x_valid = chainer.Variable(xp.asarray(validation_image_list[0:100]).astype(xp.float32))
-            y_valid_acc = chainer.Variable(xp.asarray(validation_image_label_list[0:100]).astype(xp.int32))
+            x_valid = chainer.Variable(xp.asarray(validation_image_list).astype(xp.float32))
+            y_valid_acc = chainer.Variable(xp.asarray(validation_image_label_list).astype(xp.int32))
             h_valid = model(x_valid)
             accuracy_val = F.accuracy(h_valid, y_valid_acc)
 
